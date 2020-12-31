@@ -16,15 +16,16 @@ import org.jobrunr.utils.mapper.jackson.JacksonJsonMapper
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.mockito.Mock
+import java.time.Instant
 import java.util.concurrent.TimeUnit
 
-class KotlinJobSchedulerTest {
+class KtJobSchedulerTest {
   @Mock
   private val storageProvider = InMemoryStorageProvider().also {
     it.setJobMapper(JobMapper(JacksonJsonMapper()))
   }
   private val jobClientLogFilter = JobClientLogFilter()
-  private val jobScheduler = JobScheduler(storageProvider, listOf(jobClientLogFilter))
+  private val jobScheduler = KtJobScheduler(storageProvider, listOf(jobClientLogFilter))
   private val backgroundJobServer = BackgroundJobServer(
     storageProvider,
     null,
@@ -51,6 +52,18 @@ class KotlinJobSchedulerTest {
     }
     assertThat(storageProvider.getJobById(jobId))
       .hasStates(StateName.ENQUEUED, StateName.PROCESSING, StateName.SUCCEEDED)
+  }
+
+  @Test
+  fun `test schedule simple lambda`() {
+    val jobId = jobScheduler.schedule(Instant.now().plusSeconds(1)) { "foo" }
+    assertThat(jobClientLogFilter.onCreating).isTrue
+    assertThat(jobClientLogFilter.onCreated).isTrue
+    await().atMost(Durations.FIVE_SECONDS).until {
+      storageProvider.getJobById(jobId).state == StateName.SUCCEEDED
+    }
+    assertThat(storageProvider.getJobById(jobId))
+      .hasStates(StateName.SCHEDULED, StateName.ENQUEUED, StateName.PROCESSING, StateName.SUCCEEDED)
   }
 
   @Test

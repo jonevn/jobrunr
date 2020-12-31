@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":tests:e2e-mysql-jackson:test" external.linked.project.path="$MODULE_DIR$/../../../../tests/e2e-mysql-jackson" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="org.jobrunr" external.system.module.type="sourceSet" external.system.module.version="v1.0.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
+    <output-test url="file://$MODULE_DIR$/../../../../tests/e2e-mysql-jackson/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../tests/e2e-mysql-jackson/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../tests/e2e-mysql-jackson/src/test/java" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="JobRunr.tests.e2e-mysql-jackson.main" />
+    <orderEntry type="module" module-name="JobRunr.tests.e2e-base.main" />
+    <orderEntry type="module" module-name="JobRunr.tests.e2e-base.testFixtures" />
+    <orderEntry type="module" module-name="JobRunr.core.main" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-simple:1.7.30" level="project" />
+    <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:8.0.22" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.11.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter:5.7.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.awaitility:awaitility:4.0.3" level="project" />
+    <orderEntry type="library" name="Gradle: net.javacrumbs.json-unit:json-unit-assertj:2.18.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.assertj:assertj-core:3.16.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.tngtech.archunit:archunit-junit5:0.14.1" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.mockito:mockito-junit-jupiter:3.5.15" level="project" />
+    <orderEntry type="library" name="Gradle: org.mockito:mockito-core:3.5.15" level="project" />
+    <orderEntry type="library" name="Gradle: org.testcontainers:mysql:1.14.3" level="project" />
+    <orderEntry type="module" module-name="JobRunr.core.testFixtures" />
+    <orderEntry type="library" name="Gradle: org.testcontainers:junit-jupiter:1.14.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.testcontainers:jdbc:1.14.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.testcontainers:testcontainers:1.14.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.30" level="project" />
+    <orderEntry type="library" name="Gradle: org.ow2.asm:asm:8.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.4.21" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java:3.11.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.11.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.11.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-params:5.7.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.7.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest:2.1" level="project" />
+    <orderEntry type="library" name="Gradle: net.javacrumbs.json-unit:json-unit-json-path:2.18.1" level="project" />
+    <orderEntry type="library" name="Gradle: net.javacrumbs.json-unit:json-unit-core:2.18.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.tngtech.archunit:archunit-junit5-api:0.14.1" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: net.bytebuddy:byte-buddy:1.10.15" level="project" />
+    <orderEntry type="library" name="Gradle: net.bytebuddy:byte-buddy-agent:1.10.15" level="project" />
+    <orderEntry type="library" name="Gradle: org.objenesis:objenesis:3.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.testcontainers:database-commons:1.14.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.rnorth:tcp-unix-socket-proxy:1.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:19.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-compress:1.20" level="project" />
+    <orderEntry type="library" name="Gradle: org.rnorth.duct-tape:duct-tape:1.0.8" level="project" />
+    <orderEntry type="library" name="Gradle: org.rnorth.visible-assertions:visible-assertions:2.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: net.java.dev.jna:jna-platform:5.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.apiguardian:apiguardian-api:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.platform:junit-platform-commons:1.7.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.jayway.jsonpath:json-path:2.4.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:2.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.tngtech.archunit:archunit:0.14.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.kohlschutter.junixsocket:junixsocket-native-common:2.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.kohlschutter.junixsocket:junixsocket-common:2.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: net.java.dev.jna:jna:5.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: net.minidev:json-smart:2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.scijava:native-lib-loader:2.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: net.minidev:accessors-smart:1.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.tngtech.archunit:archunit-junit5-engine:0.14.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.7.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.tngtech.archunit:archunit-junit5-engine-api:0.14.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.7.0" level="project" />
+  </component>
+</module>
