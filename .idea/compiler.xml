@@ -12,16 +12,6 @@
       <entry name="!?*.clj" />
       <entry name="!?*.aj!?*.sql" />
     </wildcardResourcePatterns>
-    <annotationProcessing>
-      <profile name="Gradle Imported" enabled="true">
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure-processor/2.3.4.RELEASE/ca924688c234a7aa3c1c070bbabf9392801dde0/spring-boot-autoconfigure-processor-2.3.4.RELEASE.jar" />
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/2.3.4.RELEASE/b0ff01c3e647564fe2bd6ad470832fc700464e63/spring-boot-configuration-processor-2.3.4.RELEASE.jar" />
-        </processorPath>
-        <module name="JobRunr.jobrunr-spring-boot-starter.main" />
-      </profile>
-    </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="JangFire.backgroundjob-server.main" target="1.8" />
       <module name="JangFire.backgroundjob-server.test" target="1.8" />
@@ -85,36 +75,61 @@
       <module name="JangFire.tests.main" target="1.8" />
       <module name="JangFire.tests.test" target="11" />
       <module name="JangFire.tests.testFixtures" target="1.8" />
+      <module name="JobRunr.core.test" target="11" />
+      <module name="JobRunr.jobrunr-spring-boot-starter.test" target="11" />
       <module name="JobRunr.platform.test" target="11" />
       <module name="JobRunr.pro.test" target="11" />
+      <module name="JobRunr.tests.e2e-base.test" target="11" />
+      <module name="JobRunr.tests.e2e-base.testFixtures" target="11" />
+      <module name="JobRunr.tests.e2e-elasticsearch-gson.test" target="11" />
+      <module name="JobRunr.tests.e2e-elasticsearch-jackson.test" target="11" />
       <module name="JobRunr.tests.e2e-jdk-8-graalvm.test" target="11" />
       <module name="JobRunr.tests.e2e-jdk-8-openj9.test" target="11" />
       <module name="JobRunr.tests.e2e-jdk-8-openjdk.test" target="11" />
       <module name="JobRunr.tests.e2e-jdk-openjdk8.test" target="11" />
       <module name="JobRunr.tests.e2e-jdk.e2e-jdk-openjdk.test" target="11" />
+      <module name="JobRunr.tests.e2e-mariadb-gson.test" target="11" />
       <module name="JobRunr.tests.e2e-mariadb-gson.testFixtures" target="1.8" />
       <module name="JobRunr.tests.e2e-mariadb-jack.main" target="1.8" />
       <module name="JobRunr.tests.e2e-mariadb-jack.test" target="11" />
       <module name="JobRunr.tests.e2e-mariadb-jack.testFixtures" target="1.8" />
+      <module name="JobRunr.tests.e2e-mariadb-jackson.test" target="11" />
       <module name="JobRunr.tests.e2e-mariadb-jackson.testFixtures" target="1.8" />
       <module name="JobRunr.tests.e2e-mariadb.main" target="1.8" />
       <module name="JobRunr.tests.e2e-mariadb.test" target="11" />
       <module name="JobRunr.tests.e2e-mariadb.testFixtures" target="1.8" />
+      <module name="JobRunr.tests.e2e-mongo-gson.test" target="11" />
+      <module name="JobRunr.tests.e2e-mongo-jackson.test" target="11" />
+      <module name="JobRunr.tests.e2e-mysql-gson.test" target="11" />
+      <module name="JobRunr.tests.e2e-mysql-jackson.test" target="11" />
+      <module name="JobRunr.tests.e2e-oracle-gson.test" target="11" />
       <module name="JobRunr.tests.e2e-oracle-gson.testFixtures" target="1.8" />
+      <module name="JobRunr.tests.e2e-oracle-jackson.test" target="11" />
       <module name="JobRunr.tests.e2e-oracle-jackson.testFixtures" target="1.8" />
       <module name="JobRunr.tests.e2e-postgres-gso.main" target="1.8" />
       <module name="JobRunr.tests.e2e-postgres-gso.test" target="11" />
       <module name="JobRunr.tests.e2e-postgres-gso.testFixtures" target="1.8" />
+      <module name="JobRunr.tests.e2e-postgres-gson.test" target="11" />
       <module name="JobRunr.tests.e2e-postgres-gson.testFixtures" target="1.8" />
+      <module name="JobRunr.tests.e2e-postgres-jackson.test" target="11" />
       <module name="JobRunr.tests.e2e-postgres-jackson.testFixtures" target="1.8" />
       <module name="JobRunr.tests.e2e-postgres.main" target="1.8" />
       <module name="JobRunr.tests.e2e-postgres.test" target="11" />
       <module name="JobRunr.tests.e2e-postgres.testFixtures" target="1.8" />
+      <module name="JobRunr.tests.e2e-redis-gson.test" target="11" />
+      <module name="JobRunr.tests.e2e-redis-jackson.test" target="11" />
+      <module name="JobRunr.tests.e2e-sqlserver-gson.test" target="11" />
+      <module name="JobRunr.tests.e2e-sqlserver-jackson.test" target="11" />
+      <module name="JobRunr.tests.e2e-ui-gson.main" target="11" />
+      <module name="JobRunr.tests.e2e-ui-gson.test" target="11" />
       <module name="JobRunr.tests.e2e-ui-gson.testFixtures" target="1.8" />
+      <module name="JobRunr.tests.e2e-ui-jackson.main" target="11" />
+      <module name="JobRunr.tests.e2e-ui-jackson.test" target="11" />
       <module name="JobRunr.tests.e2e-ui-jackson.testFixtures" target="1.8" />
       <module name="JobRunr.tests.e2e-ui.main" target="1.8" />
       <module name="JobRunr.tests.e2e-ui.test" target="11" />
       <module name="JobRunr.tests.e2e-ui.testFixtures" target="1.8" />
+      <module name="JobRunr.tests.test" target="11" />
       <module name="JobRunr.tests.testFixtures" target="1.8" />
       <module name="org.jangfire.JangFire.storage.core.main" target="1.8" />
       <module name="org.jangfire.JangFire.storage.core.test" target="1.8" />
