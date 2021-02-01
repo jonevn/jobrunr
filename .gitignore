@@ -164,3 +164,8 @@ yarn-debug.log*
 yarn-error.log*
 
 *.secrets
+
+# Eclipse
+.classpath
+.settings/
+.project
